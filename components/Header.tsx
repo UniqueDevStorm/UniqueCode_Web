@@ -19,8 +19,8 @@ export default function Header() {
           </a>
         </Link>
         <div className='flex float-right font-thin p-7 px-5 gap-4 sm:gap-12 sm:text-3xl sm:px-20 sm:p-8 font-bold'>
-          <Link href='/project'>
-            <a href='/project'>프로젝트</a>
+          <Link href='/projects'>
+            <a href='/projects'>프로젝트</a>
           </Link>
           <Link href='/members'>
             <a href='/members'>멤버</a>
