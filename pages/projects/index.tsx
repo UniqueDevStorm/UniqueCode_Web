@@ -2,6 +2,7 @@ import ProjectItem from '../../components/ProjectItem'
 import StrawberryDonut from '@assets/img/projects/StrawberryDonut.png'
 import OliveToast from '@assets/img/projects/OliveToast.png'
 import MiniBOT from '@assets/img/projects/MiniBOT.png'
+import FreeAI from '@assets/img/projects/FreeAI.png'
 
 export default function Project() {
   return (
@@ -55,14 +56,28 @@ export default function Project() {
             {
               text: '초대하기',
               href:
-                'https://discord.com/oauth2/authorize?client_id=684736677960482826&permissions=11328&scope=bot',
+                'https://discord.com/oauth2/authorize?client_id=520830713696878592&permissions=8&scope=bot',
               color: '#7187D4',
               dark: true,
             },
             {
               text: '서포트 서버',
-              href: 'https://discord.gg/WWk5xG3ehQ',
+              href: 'https://discord.gg/pbd2xXJ',
               color: '#000',
+              dark: true,
+            },
+          ]}
+        />
+        <ProjectItem
+          name='FreeAI'
+          img={FreeAI}
+          description='다기능 챗봇'
+          links={[
+            {
+              text: '초대하기',
+              href:
+                'https://discord.com/oauth2/authorize?client_id=695899835953578025&permissions=2084433143&scope=bot',
+              color: '#7187D4',
               dark: true,
             },
           ]}
