@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 interface ProjectProps {
   img: string
+  name: string
+  description: string
 }
 
 const Image = styled.img`
@@ -11,10 +13,14 @@ const Image = styled.img`
   opacity: 1;
 `
 
-const ProjectItem: React.FC<ProjectProps> = ({ img }) => {
+const ProjectItem: React.FC<ProjectProps> = ({ img, name, description }) => {
   return (
-    <div>
-      <Image src={img} alt='project image' />
+    <div className='flex gap-12'>
+      <Image src={img} alt='project image' className='w-48' />
+      <div>
+        <span className='text-6xl'>{name}</span>
+        <div className='text-2xl'>{description}</div>
+      </div>
     </div>
   )
 }

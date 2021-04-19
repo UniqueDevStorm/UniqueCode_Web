@@ -5,7 +5,11 @@ export default function Project() {
   return (
     <div className='justify-center flex'>
       <div className='flex flex-col gap-12'>
-        <ProjectItem img={StrawberryDonut} />
+        <ProjectItem
+          name='StrawberryDonut'
+          img={StrawberryDonut}
+          description='나만의 스토리를 만들다'
+        />
       </div>
     </div>
   )
