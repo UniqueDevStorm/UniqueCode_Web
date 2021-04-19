@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className='bg-gray-100'>
       <div
-        className='container mx-auto h-44 w-full flex justify-between'
+        className='container mx-auto h-44 w-full flex justify-between flex-col lg:flex-row'
         style={{
           alignItems: 'center',
         }}
