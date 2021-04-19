@@ -1,5 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
+import logo from '@assets/img/logo.png';
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
             className='flex items-center flex-grow float-left px-0 sm:px-20 sm:p-2'
           >
             <img
-              src='/UniqueCode.png'
+              src={logo}
               className='opacity-100 w-20 h-20'
               alt='UniqueCode'
             />
