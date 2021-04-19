@@ -1,6 +1,6 @@
 export default function CommingSoon() {
   return (
-    <div style={{ marginTop: '8rem', marginLeft: '39rem' }}>
+    <div>
       <img
         alt='Comming Soon!'
         src='/Projects/CommingSoon.png'

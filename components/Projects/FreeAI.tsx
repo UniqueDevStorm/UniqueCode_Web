@@ -1,6 +1,6 @@
 export default function FreeAI() {
   return (
-    <div className='mx-auto' style={{ marginLeft: '39rem' }}>
+    <div>
       <img
         alt='FreeAI'
         width={178}

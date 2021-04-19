@@ -1,6 +1,6 @@
 export default function StrawberryDonut() {
   return (
-    <div className='p-60 mx-auto ml-96 flex sm:gap-10'>
+    <div className='flex sm:gap-10'>
       <img
         width={178}
         height={178}

@@ -1,6 +1,6 @@
 export default function Uniquebots() {
   return (
-    <div style={{ marginTop: '10rem', marginLeft: '39rem' }}>
+    <div>
       <img
         src='/Projects/Uniquebots.png'
         alt='Uniquebots'

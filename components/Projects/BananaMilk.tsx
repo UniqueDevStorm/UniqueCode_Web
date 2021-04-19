@@ -1,6 +1,6 @@
 export default function BananaMilk() {
   return (
-    <div className='mx-auto' style={{ marginLeft: '39rem', marginTop: '8rem' }}>
+    <div>
       <img
         alt='BananaMilk'
         src='/Projects/BananaMilk.png'

@@ -1,9 +1,6 @@
 export default function MiniBOT() {
   return (
-    <div
-      className='p-32 mx-auto'
-      style={{ marginLeft: '31rem', marginTop: '1rem' }}
-    >
+    <div>
       <img
         alt='MiniBOT'
         width={178}

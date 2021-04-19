@@ -1,6 +1,6 @@
 export default function OliveToast() {
   return (
-    <div style={{ marginTop: '-8rem', marginLeft: '39rem' }}>
+    <div>
       <img
         alt='OliveToast'
         width={178}
