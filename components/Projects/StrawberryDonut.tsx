@@ -24,6 +24,7 @@ export default function StrawberryDonut() {
           >
             <a
               className='mt-96'
+              target='_blank'
               href='https://discord.com/oauth2/authorize?client_id=684736677960482826&permissions=11328&scope=bot'
             >
               초대하기
@@ -53,7 +54,7 @@ export default function StrawberryDonut() {
               boxShadow: '5px 5px 20px #4B4B4B29',
             }}
           >
-            <a className='mt-96' href='https://sbdonut.dev'>
+            <a className='mt-96' href='https://sbdonut.dev' target='_blank'>
               공식 사이트
             </a>
           </button>

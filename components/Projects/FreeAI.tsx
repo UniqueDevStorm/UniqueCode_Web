@@ -28,6 +28,7 @@ export default function FreeAI() {
             <a
               className='mt-96'
               href='https://discord.com/oauth2/authorize?client_id=695899835953578025&permissions=2084433143&scope=bot'
+              target='_blank'
             >
               초대하기
             </a>

@@ -28,6 +28,7 @@ export default function BananaMilk() {
             <a
               className='mt-96'
               href='https://discord.com/api/oauth2/authorize?client_id=805641034905944086&permissions=3525696&scope=bot'
+              target='_blank'
             >
               초대하기
             </a>
@@ -42,7 +43,11 @@ export default function BananaMilk() {
               boxShadow: '5px 5px 20px #4B4B4B29',
             }}
           >
-            <a className='mt-96' href='https://discord.gg/7F96MbaJnz'>
+            <a
+              className='mt-96'
+              href='https://discord.gg/7F96MbaJnz'
+              target='_blank'
+            >
               서포트 서버
             </a>
           </button>

@@ -28,6 +28,7 @@ export default function OliveToast() {
             <a
               className='mt-96'
               href='https://discord.com/oauth2/authorize?client_id=495209098929766400&permissions=8&scope=bot'
+              target='_blank'
             >
               초대하기
             </a>

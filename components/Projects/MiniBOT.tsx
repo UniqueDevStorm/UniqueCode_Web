@@ -28,6 +28,7 @@ export default function MiniBOT() {
             <a
               className='mt-96'
               href='https://discord.com/oauth2/authorize?client_id=520830713696878592&permissions=8&scope=bot'
+              target='_blank'
             >
               초대하기
             </a>
@@ -42,7 +43,11 @@ export default function MiniBOT() {
               boxShadow: '5px 5px 20px #4B4B4B29',
             }}
           >
-            <a className='mt-96' href='https://discord.gg/pbd2xXJ'>
+            <a
+              className='mt-96'
+              href='https://discord.gg/pbd2xXJ'
+              target='_blank'
+            >
               서포트 서버
             </a>
           </button>

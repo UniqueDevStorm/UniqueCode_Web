@@ -27,7 +27,7 @@ export default function Uniquebots() {
               boxShadow: '5px 5px 20px #4B4B4B29',
             }}
           >
-            <a className='mt-96' href='https://uniquebots.kr'>
+            <a className='mt-96' href='https://uniquebots.kr' target='_blank'>
               바로가기
             </a>
           </button>
@@ -41,7 +41,11 @@ export default function Uniquebots() {
               boxShadow: '5px 5px 20px #4B4B4B29',
             }}
           >
-            <a className='mt-96' href='https://discord.gg/NBdJdABkHG'>
+            <a
+              className='mt-96'
+              href='https://discord.gg/NBdJdABkHG'
+              target='_blank'
+            >
               서포트 서버
             </a>
           </button>
