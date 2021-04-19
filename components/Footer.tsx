@@ -26,14 +26,18 @@ export default function Footer() {
           </h1>
         </div>
         <div>
-          <a href='https://discord.gg/ARCdUzC'>
+          <a href='https://discord.gg/ARCdUzC' target='_blank'>
             <FontAwesomeIcon
               icon={['fab', 'discord']}
               className='text-5xl'
               color='#000000'
             />
           </a>
-          <a href='https://github.com/UniqueCodeGit' className='ml-5'>
+          <a
+            href='https://github.com/UniqueCodeGit'
+            className='ml-5'
+            target='_blank'
+          >
             <FontAwesomeIcon
               icon={['fab', 'github']}
               className='text-5xl'
