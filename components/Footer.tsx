@@ -1,22 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
 import tw from 'twin.macro'
+import logo from '@assets/img/logo.png'
 
 const Container = styled.div`
   background: #f4f4f6;
-  min-height: 11rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ${tw`md:px-24 py-4 px-4 flex-col md:flex-row`}
+  ${tw`md:px-24 py-4 px-4`}
+  flex-direction: column;
+`
+
+const Content = styled.div`
+  ${tw`flex-col md:flex-row flex`}
 `
 
 const Footer = () => {
   return (
     <Container>
-      <div>LEFT</div>
-      <div>CENTER</div>
-      <div>RIGHT</div>
+      <Content
+        className='flex justify-center'
+        style={{
+          alignItems: 'center',
+        }}
+      >
+        <img src={logo} alt='Logo' className='w-16 h-16' />
+        <div className='text-3xl'>UniqueCode</div>
+      </Content>
+      <div>2021 &copy; UniqueCode all rights reserved.</div>
     </Container>
   )
 }
