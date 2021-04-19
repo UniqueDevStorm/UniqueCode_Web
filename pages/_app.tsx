@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
       }}
     >
       <Header />
-      <div>
+      <div className='container mx-auto pt-10'>
         <Component {...pageProps} />
       </div>
       <div className='flex-grow mb-24' />

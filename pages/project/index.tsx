@@ -8,14 +8,16 @@ import CommingSoon from '../../components/Projects/CommingSoon'
 
 export default function Project() {
   return (
-    <div>
-      <StrawberryDonut />
-      <OliveToast />
-      <MiniBOT />
-      <FreeAI />
-      <BananaMilk />
-      <Uniquebots />
-      <CommingSoon />
+    <div className='justify-center flex'>
+      <div className='flex flex-col gap-12'>
+        <StrawberryDonut />
+        <OliveToast />
+        <MiniBOT />
+        <FreeAI />
+        <BananaMilk />
+        <Uniquebots />
+        <CommingSoon />
+      </div>
     </div>
   )
 }
