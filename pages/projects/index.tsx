@@ -1,5 +1,6 @@
 import ProjectItem from '../../components/ProjectItem'
 import StrawberryDonut from '@assets/img/projects/StrawberryDonut.png'
+import OliveToast from '@assets/img/projects/OliveToast.png'
 
 export default function Project() {
   return (
@@ -8,7 +9,7 @@ export default function Project() {
         <ProjectItem
           name='StrawberryDonut'
           img={StrawberryDonut}
-          description='나만의 스토리를 만들다'
+          description='나만의 스토리를 만들다.'
           links={[
             {
               text: '초대하기',
@@ -27,6 +28,20 @@ export default function Project() {
               text: '공식 사이트',
               href: 'https://sbdonut.dev',
               color: '#FD8AA1',
+              dark: true,
+            },
+          ]}
+        />
+        <ProjectItem
+          name='OliveToast'
+          img={OliveToast}
+          description='서버를 관리해줍니다.'
+          links={[
+            {
+              text: '초대하기',
+              href:
+                'https://discord.com/oauth2/authorize?client_id=495209098929766400&permissions=8&scope=bot',
+              color: '#7187D4',
               dark: true,
             },
           ]}
