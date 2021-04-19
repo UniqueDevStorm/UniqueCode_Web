@@ -29,13 +29,15 @@ const ProjectItem: React.FC<ProjectProps> = ({
   links,
 }) => {
   return (
-    <div className='flex gap-12'>
-      <Image src={img} alt='project image' className='w-48' />
+    <div className='flex gap-6 md:gap-12 flex-col md:flex-row justify-center md:justify-start'>
+      <Image src={img} alt='project image' className='w-48 mx-auto md:mx-0' />
       <div className='flex flex-col'>
-        <span className='text-6xl'>{name}</span>
-        <div className='text-2xl'>{description}</div>
+        <span className='md:text-6xl text-4xl mx-auto md:mx-0'>{name}</span>
+        <div className='text-xl md:text-2xl mx-auto md:mx-0 mt-2 md:mt-0'>
+          {description}
+        </div>
         <div className='flex-grow' />
-        <div className='flex gap-2 mb-4'>
+        <div className='flex gap-2 mb-4 mx-auto md:mx-0 mt-2 md:mt-0 flex-col md:flex-row'>
           {links.map((x, i) => (
             <Button
               key={i}
