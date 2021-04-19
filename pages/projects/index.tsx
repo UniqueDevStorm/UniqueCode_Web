@@ -9,6 +9,27 @@ export default function Project() {
           name='StrawberryDonut'
           img={StrawberryDonut}
           description='나만의 스토리를 만들다'
+          links={[
+            {
+              text: '초대하기',
+              href:
+                'https://discord.com/oauth2/authorize?client_id=684736677960482826&permissions=11328&scope=bot',
+              color: '#7187D4',
+              dark: true,
+            },
+            {
+              text: '서포트 서버',
+              href: 'https://discord.gg/WWk5xG3ehQ',
+              color: '#000',
+              dark: true,
+            },
+            {
+              text: '공식 사이트',
+              href: 'https://sbdonut.dev',
+              color: '#FD8AA1',
+              dark: true,
+            },
+          ]}
         />
       </div>
     </div>
