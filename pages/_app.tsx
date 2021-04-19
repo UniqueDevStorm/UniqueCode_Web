@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
       <div>
         <Component {...pageProps} />
       </div>
-      <div className='flex-grow' />
+      <div className='flex-grow mb-24' />
       <Footer />
     </div>
   )
