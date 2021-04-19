@@ -1,4 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import Link from 'next/link'
 
 export default function Header() {
     return (
@@ -9,9 +10,9 @@ export default function Header() {
                     <a className='font-thin sm:text-3xl' href='/'>UniqueCode</a>
                 </div>
                 <div className='flex float-right font-thin p-7 px-5 gap-4 sm:gap-12 sm:text-3xl sm:px-20 sm:p-8'>
-                    <a href='/project'>프로젝트</a>
-                    <a href='./'>멤버</a>
-                    <a href='./'>채용</a>
+                    <Link href="/project"><a href='/project'>프로젝트</a></Link>
+                    <Link href="/members"><a href='/members'>멤버</a></Link>
+                    <Link href="/jobs"><a href='/jobs'>채용</a></Link>
                 </div>
             </nav>
         </div>
