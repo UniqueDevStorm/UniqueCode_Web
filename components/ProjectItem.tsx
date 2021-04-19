@@ -35,7 +35,7 @@ const ProjectItem: React.FC<ProjectProps> = ({
         <span className='text-6xl'>{name}</span>
         <div className='text-2xl'>{description}</div>
         <div className='flex-grow' />
-        <div className='flex gap-2'>
+        <div className='flex gap-2 mb-4'>
           {links.map((x, i) => (
             <Button
               key={i}
