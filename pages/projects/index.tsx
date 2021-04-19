@@ -1,6 +1,7 @@
 import ProjectItem from '../../components/ProjectItem'
 import StrawberryDonut from '@assets/img/projects/StrawberryDonut.png'
 import OliveToast from '@assets/img/projects/OliveToast.png'
+import MiniBOT from '@assets/img/projects/MiniBOT.png'
 
 export default function Project() {
   return (
@@ -42,6 +43,26 @@ export default function Project() {
               href:
                 'https://discord.com/oauth2/authorize?client_id=495209098929766400&permissions=8&scope=bot',
               color: '#7187D4',
+              dark: true,
+            },
+          ]}
+        />
+        <ProjectItem
+          name='MiniBOT'
+          img={MiniBOT}
+          description='커스텀 봇을 봇으로 제작하세요.'
+          links={[
+            {
+              text: '초대하기',
+              href:
+                'https://discord.com/oauth2/authorize?client_id=684736677960482826&permissions=11328&scope=bot',
+              color: '#7187D4',
+              dark: true,
+            },
+            {
+              text: '서포트 서버',
+              href: 'https://discord.gg/WWk5xG3ehQ',
+              color: '#000',
               dark: true,
             },
           ]}
