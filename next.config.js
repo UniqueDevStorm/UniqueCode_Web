@@ -1,9 +1,7 @@
-module.exports = {
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.node = { fs: 'empty', module: 'empty' }
-    }
+const withImages = require('next-images')
 
-    return config
+module.exports = withImages({
+  future: {
+    webpack5: true,
   },
-}
+})
