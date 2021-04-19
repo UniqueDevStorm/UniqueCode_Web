@@ -7,7 +7,7 @@ const Button = styled.a<{ color?: string; dark?: boolean }>`
   user-select: none;
   color: ${({ dark }) => (dark || true ? '#fff' : '#000')};
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   &:active {
     transform: scale(1);
