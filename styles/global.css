@@ -1,4 +1,4 @@
-body {
+* {
     font-family: "SF Pro Display", sans-serif;
 }
 
@@ -6,5 +6,5 @@ body {
     font-family:'SF Pro Display';
     font-style:normal;
     font-weight:100;
-    src:local('☺︎'), url("https://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_ultralight.woff") format("woff"), url("https://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_ultralight.ttf") format("truetype");
+    src: url("../fonts/SF-Pro.ttf") format('truetype');
 }
