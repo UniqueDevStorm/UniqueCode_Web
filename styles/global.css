@@ -1,10 +1,10 @@
 * {
-    font-family: "SF Pro Display", sans-serif;
+  font-family: 'SF Pro Display', sans-serif;
 }
 
 @font-face {
-    font-family:'SF Pro Display';
-    font-style:normal;
-    font-weight:100;
-    src: url("../fonts/SF-Pro.ttf") format('truetype');
+  font-family: 'SF Pro Display';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/SF-Pro.ttf') format('truetype');
 }
