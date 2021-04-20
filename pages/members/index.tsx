@@ -9,7 +9,7 @@ export default function Members() {
       <User Name='Minibox' Description='안녕하세요 미니박스예요' />
       <User Name='SaidBySolo' Description='愛して 君を愛していたんだって君に伝えられなかったなあ' />
       <User Name='호두과자' Description='개발자 겸 영상편집자' />
-      <User Name='choshinyoung' Description='고야이' />
+      <User Name='choshinyoung' Description='대표 | 고야이' />
       <User Name='BGM' Description='몰라' />
       <User Name='sandsunset' Description='취미로 코딩' />
       <User Name='ReDesigned' Description='mailto:aria@アリア.みんな' />

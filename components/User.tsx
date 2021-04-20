@@ -10,7 +10,7 @@ const User: React.FC<UserProps> = ({
     Description
 }) => {
     return (
-        <div className='flex'>
+        <div className='flex p-5'>
             <img
                 src={`/Users/${Name}.png`}
                 style={{ borderRadius: '50px', boxShadow: '10px 10px 30px #74747429' }}

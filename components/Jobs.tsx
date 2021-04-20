@@ -34,8 +34,8 @@ const Jobs: React.FC<ProjectProps> = ({
 }) => {
     return (
         <div className='p-10'>
-            <h1 className='font-thin text-6xl'>{name}</h1>
-            <h2 className='font-thin text-4xl'>{description}</h2>
+            <h1 className='font-thin text-3xl sm:text-6xl'>{name}</h1>
+            <h2 className='font-thin text-2xl sm:text-4xl'>{description}</h2>
             {status ? <StatusTrue /> : <StatusFalse />}
         </div>
     )
