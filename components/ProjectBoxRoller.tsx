@@ -1,5 +1,5 @@
 import React from 'react'
-import { Transition, TransitionGroup } from 'react-transition-group'
+import { Transition, TransitionGroup } from 'react-transition-group';
 
 const TIMEOUT = 500
 
@@ -27,7 +27,7 @@ const ProjectBoxRoller: React.FC = ({ children }) => {
   React.useEffect(() => {
     const timer = setTimeout(
       () => setCurrent(children.length === current + 1 ? 0 : current + 1),
-      4000
+      3000
     )
     return () => clearTimeout(timer)
   }, [current, setCurrent])

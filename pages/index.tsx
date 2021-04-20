@@ -7,10 +7,15 @@ import MiniBOT from '@assets/img/projects/MiniBOT.png'
 import FreeAI from '@assets/img/projects/FreeAI.png'
 import BananaMilk from '@assets/img/projects/BananaMilk.png'
 import Uniquebots from '@assets/img/projects/Uniquebots.png'
+import { NextSeo } from "next-seo";
 
 export default function Home() {
   return (
     <div>
+      <NextSeo
+        title='UniqueCode'
+        description='UniqueCode WebSite.'
+      />
       <div className='flex items-center justify-center gap-5'>
         <h1 className='text-2xl sm:text-7xl font-thin'>
           당신의 디스코드에

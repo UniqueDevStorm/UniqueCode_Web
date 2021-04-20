@@ -14,7 +14,7 @@ const User: React.FC<UserProps> = ({
             <img
                 src={`/Users/${Name}.png`}
                 style={{ borderRadius: '50px', boxShadow: '10px 10px 30px #74747429' }}
-                className='h-32 w-32 sm:h-40 sm:w-40'
+                className='h-28 w-28 sm:h-40 sm:w-40'
             />
             <div className='block font-thin mt-5 ml-5 sm:mt-10 sm:ml-10'>
                 <h1 className='text-2xl sm:text-4xl'>{Name}</h1>

@@ -1,8 +1,13 @@
 import User from '../../components/User'
+import {NextSeo} from "next-seo";
 
 export default function Members() {
   return (
-    <div className='grid grid-flow-col grid-rows-11 sm:grid-rows-6 sm:grid-cols-2 gap-20 justify-center'>
+    <div className='grid grid-flow-col grid-rows-11 sm:grid-rows-6 sm:grid-cols-2 sm:gap-20 justify-center'>
+      <NextSeo
+        title='UniqueCode Members'
+        description='UniqueCode Members.'
+      />
       <User Name='스톰' Description='대표 | 프론트엔드 & 백엔드 개발자' />
       <User Name='Happytree Samsung' Description='안녕하세요 삼성해피트리입니다!' />
       <User Name='라피스' Description='Python!' />

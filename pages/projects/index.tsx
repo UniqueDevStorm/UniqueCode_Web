@@ -6,10 +6,15 @@ import FreeAI from '@assets/img/projects/FreeAI.png'
 import BananaMilk from "@assets/img/projects/BananaMilk.png"
 import Uniquebots from "@assets/img/projects/Uniquebots.png"
 import CommingSoon from "@assets/img/projects/CommingSoon.png"
+import {NextSeo} from "next-seo";
 
 export default function Project() {
   return (
     <div className='justify-center flex'>
+      <NextSeo
+        title='UniqueCode Projects'
+        description='UniqueCode Projects.'
+      />
       <div className='flex flex-col gap-12'>
         <ProjectItem
           name='StrawberryDonut'

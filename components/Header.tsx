@@ -1,6 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
 import logo from '@assets/img/logo.png';
+import tw from 'twin.macro';
+import styled from "styled-components";
+
+const Animation = styled.a`
+  ${tw`transition-all ease-in-out`}
+`
 
 export default function Header() {
   return (
