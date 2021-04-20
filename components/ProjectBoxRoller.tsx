@@ -1,4 +1,23 @@
 import React from 'react'
+import { Transition, TransitionGroup } from 'react-transition-group'
+
+const TIMEOUT = 500
+
+const getTransitionStyles = {
+  entering: {
+    position: 'absolute',
+    opacity: 0,
+    transition: `all ${TIMEOUT}ms ease-in-out`,
+  },
+  entered: {
+    transition: `all ${TIMEOUT}ms ease-in-out`,
+    opacity: 1,
+  },
+  exiting: {
+    transition: `all ${TIMEOUT}ms ease-in-out`,
+    opacity: 0,
+  },
+}
 
 const ProjectBoxRoller: React.FC = ({ children }) => {
   if (!(children instanceof Array)) return
@@ -13,7 +32,29 @@ const ProjectBoxRoller: React.FC = ({ children }) => {
     return () => clearTimeout(timer)
   }, [current, setCurrent])
 
-  return <div>{children[current]}</div>
+  return (
+    <div>
+      <TransitionGroup
+        style={{
+          position: 'relative',
+        }}
+      >
+        <Transition
+          key={current}
+          timeout={{
+            exit: TIMEOUT,
+            enter: TIMEOUT,
+          }}
+        >
+          {(status) => (
+            <div style={{ ...getTransitionStyles[status] }}>
+              {children[current]}
+            </div>
+          )}
+        </Transition>
+      </TransitionGroup>
+    </div>
+  )
 }
 
 export default ProjectBoxRoller
