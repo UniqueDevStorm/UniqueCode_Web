@@ -29,9 +29,6 @@ const Footer = () => {
         <div className='text-3xl'>UniqueCode</div>
       </Content>
       <div>2021 &copy; UniqueCode all rights reserved.</div>
-      <Content>
-
-      </Content>
     </Container>
   )
 }

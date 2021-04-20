@@ -19,7 +19,7 @@ export default function Header() {
             <span className='font-thin sm:text-3xl'>UniqueCode</span>
           </a>
         </Link>
-        <div className='flex float-right font-thin p-7 px-5 gap-4 sm:gap-12 sm:text-3xl sm:px-20 sm:p-8'>
+        <div className='flex float-right font-thin p-8 px-5 text-sm gap-4 sm:gap-12 sm:text-3xl sm:px-20 sm:p-8'>
           <Link href='/projects'>
             <a href='/projects'>프로젝트</a>
           </Link>
