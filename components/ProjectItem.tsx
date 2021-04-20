@@ -45,6 +45,7 @@ const ProjectItem: React.FC<ProjectProps> = ({
               target='_blank'
               color={x.color}
               dark={x.dark}
+              className='shadow-lg'
             >
               {x.text}
             </Button>

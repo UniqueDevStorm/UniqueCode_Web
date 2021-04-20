@@ -3,6 +3,9 @@ import StrawberryDonut from '@assets/img/projects/StrawberryDonut.png'
 import OliveToast from '@assets/img/projects/OliveToast.png'
 import MiniBOT from '@assets/img/projects/MiniBOT.png'
 import FreeAI from '@assets/img/projects/FreeAI.png'
+import BananaMilk from "@assets/img/projects/BananaMilk.png"
+import Uniquebots from "@assets/img/projects/Uniquebots.png"
+import CommingSoon from "@assets/img/projects/CommingSoon.png"
 
 export default function Project() {
   return (
@@ -80,6 +83,60 @@ export default function Project() {
               color: '#7187D4',
               dark: true,
             },
+          ]}
+        />
+        <ProjectItem
+            name='BananaMilk'
+            img={BananaMilk}
+            description='모두 함께 이야기를 재미있게.'
+            links={[
+                {
+                    text: '초대하기',
+                    href:
+                        'https://discord.com/api/oauth2/authorize?client_id=805641034905944086&permissions=3525696&scope=bot',
+                    color: '#7187D4',
+                    dark: true,
+                },
+                {
+                    text: '서포트 서버',
+                    href:
+                        'https://discord.gg/7F96MbaJnz',
+                    color: '#000',
+                    dark: true
+                }
+            ]}
+        />
+        <ProjectItem
+          name='Uniquebots'
+          img={Uniquebots}
+          description='당신의 디스코드 봇을 홍보해보세요.'
+          links={[
+              {
+                  text: '바로가기',
+                  href:
+                      'https://uniquebots.kr',
+                  color: 'gray',
+                  dark: true,
+              },
+              {
+                  text: '서포트 서버',
+                  href:
+                      'https://discord.gg/NBdJdABkHG',
+                  color: '#000',
+                  dark: true
+              }
+          ]}
+        />
+        <ProjectItem
+          name='????'
+          img={CommingSoon}
+          description='Comming Soon.'
+          links={[
+              {
+                  text: 'Comming Soon!',
+                  href: '',
+                  color: '#7187D4'
+              }
           ]}
         />
       </div>
