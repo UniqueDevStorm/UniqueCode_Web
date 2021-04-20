@@ -13,6 +13,11 @@ export default function Recruitment() {
                 description='React.js, Next.js 등 여러 라이브러리를 잘 다뤄야해요.'
                 status={true}
             />
+            <Jobs
+                name='ㅋㅋ루'
+                description='테스트임 ㅋㅋ루'
+                status={false}
+            />
         </div>
     )
 }

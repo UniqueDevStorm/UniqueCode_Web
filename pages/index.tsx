@@ -14,11 +14,11 @@ export default function Home() {
           <h1 className='text-2xl sm:text-7xl font-thin'>당신의 디스코드에<br/>유니크한 재미를 더.</h1>
           <FontAwesomeIcon icon={['fab', 'discord']} color={"#7187D4"} className='text-6xl sm:text-9xl' />
         </div>
-        {/*<ProjectBox*/}
-        {/*    img={StrawberryDonut}*/}
-        {/*    name='StrawberryDonut'*/}
-        {/*    description='나만의 스토리를 만들다.'*/}
-        {/*/>*/}
+        <ProjectBox
+            img={StrawberryDonut}
+            name='StrawberryDonut'
+            description='나만의 스토리를 만들다.'
+        />
         {/*<ProjectBox*/}
         {/*    img={OliveToast}*/}
         {/*    name='OliveToast'*/}

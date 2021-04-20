@@ -19,9 +19,9 @@ const StatusTrue = () => {
 
 const StatusFalse = () => {
     return (
-        <div className='select-none'>
+        <div className='select-none flex'>
             <Button color={'#000'}>
-                신청하기
+                ❌ 신청하기
             </Button>
         </div>
     )
