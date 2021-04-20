@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import ProjectBox from '../components/ProjectsBox'
 import StrawberryDonut from '@assets/img/projects/StrawberryDonut.png'
-import OliveToast from '@assets/img/projects/OliveToast.png'
-import MiniBOT from '@assets/img/projects/MiniBOT.png'
-import FreeAI from '@assets/img/projects/FreeAI.png'
-import BananaMilk from '@assets/img/projects/BananaMilk.png'
-import Uniquebots from '@assets/img/projects/Uniquebots.png'
+// import OliveToast from '@assets/img/projects/OliveToast.png'
+// import MiniBOT from '@assets/img/projects/MiniBOT.png'
+// import FreeAI from '@assets/img/projects/FreeAI.png'
+// import BananaMilk from '@assets/img/projects/BananaMilk.png'
+// import Uniquebots from '@assets/img/projects/Uniquebots.png'
 
 export default function Home() {
   return (
