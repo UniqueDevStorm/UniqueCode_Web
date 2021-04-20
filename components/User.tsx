@@ -19,7 +19,7 @@ const User: React.FC<UserProps> = ({
             />
             <div className='block font-thin mt-10 ml-10'>
                 <h1 className='text-4xl'>{Name}</h1>
-                <h2 className='text-2xl'>{Description}</h2>
+                <h2 className='text-2xl sm:max-w-sm'>{Description}</h2>
             </div>
         </div>
     )
