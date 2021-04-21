@@ -4,13 +4,15 @@ import logo from '@assets/img/logo.png';
 import tw from 'twin.macro';
 import styled from "styled-components";
 
-const Animation = styled.a`
-  ${tw`transition-all ease-in-out`}
+const Blur = styled.div`
+  backdrop-filter: blur(20px) saturate(100%);
+  top: 0;
+  position: sticky;
 `
 
 export default function Header() {
   return (
-    <div>
+    <Blur>
       <nav className='w-full'>
         <Link href='/'>
           <a
@@ -37,6 +39,6 @@ export default function Header() {
           </Link>
         </div>
       </nav>
-    </div>
+    </Blur>
   )
 }
