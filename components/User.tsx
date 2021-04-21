@@ -1,20 +1,23 @@
 import React from "react";
 
 interface UserProps {
-    Name: string,
+    img: string
+    Name: string
     Description: string
 }
 
 const User: React.FC<UserProps> = ({
+    img,
     Name,
     Description
 }) => {
     return (
         <div className='flex p-5'>
             <img
-                src={`/Users/${Name}.png`}
+                src={img}
                 style={{ borderRadius: '50px', boxShadow: '10px 10px 30px #74747429' }}
                 className='h-28 w-28 sm:h-40 sm:w-40'
+                alt={Name}
             />
             <div className='block font-thin mt-5 ml-5 sm:mt-10 sm:ml-10'>
                 <h1 className='text-2xl sm:text-4xl'>{Name}</h1>
