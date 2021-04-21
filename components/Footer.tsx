@@ -16,6 +16,10 @@ const Content = styled.div`
   ${tw`flex-col md:flex-row flex`}
 `
 
+function Context(props: { style: {}, className: string }) {
+    return null;
+}
+
 const Footer = () => {
   return (
     <Container>

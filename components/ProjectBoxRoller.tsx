@@ -27,7 +27,7 @@ const ProjectBoxRoller: React.FC = ({ children }) => {
   React.useEffect(() => {
     const timer = setTimeout(
       () => setCurrent(children.length === current + 1 ? 0 : current + 1),
-      3000
+      2000
     )
     return () => clearTimeout(timer)
   }, [current, setCurrent])
