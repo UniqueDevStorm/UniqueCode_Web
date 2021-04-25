@@ -1,6 +1,8 @@
 import Jobs from "../../components/Jobs";
 import React from "react";
-import {NextSeo} from "next-seo";
+import { NextSeo } from "next-seo";
+import data from '@assets/Recruitment.json';
+import Button from "@components/Button";
 
 export default function Recruitment() {
     return (
@@ -9,21 +11,14 @@ export default function Recruitment() {
                 title='UniqueCode Jobs'
                 description='UniqueCode Jobs.'
             />
-            <Jobs
-                name='백엔드 개발자 모집'
-                description='discord.py, discord.js 등 백엔드 라이브러리를 잘 다뤄야 해요.'
-                status={true}
-            />
-            <Jobs
-                name='프론트엔드 개발자 모집'
-                description='React.js, Next.js 등 여러 라이브러리를 잘 다뤄야해요.'
-                status={true}
-            />
-            <Jobs
-                name='ㅋㅋ루'
-                description='테스트임 ㅋㅋ루'
-                status={false}
-            />
+            {data.map((x, i) => (
+                <Jobs
+                    name={x.name}
+                    description={x.description}
+                    status={x.status}
+                    key={i}
+                />
+            ))}
         </div>
     )
 }

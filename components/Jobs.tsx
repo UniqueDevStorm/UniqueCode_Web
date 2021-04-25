@@ -95,6 +95,13 @@ const Jobs: React.FC<ProjectProps> = ({
                     />
                     <TextField
                         margin='dense'
+                        id='github'
+                        label='깃허브 아이디'
+                        type='text'
+                        fullWidth
+                    />
+                    <TextField
+                        margin='dense'
                         id='self_intro'
                         label='자기소개'
                         type='text'
@@ -118,12 +125,14 @@ const Jobs: React.FC<ProjectProps> = ({
                         const age = document.getElementById('age').value;
                         const intro = document.getElementById('self_intro').value;
                         const determination = document.getElementById('determination').value;
+                        const github = document.getElementById('github').value;
                         fetch('/api/Webhook', {
                             method: 'POST',
                             body: new URLSearchParams({
                                 discord,
                                 id,
                                 age,
+                                github,
                                 intro,
                                 determination
                             })
