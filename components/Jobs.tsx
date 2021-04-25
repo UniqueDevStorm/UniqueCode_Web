@@ -80,10 +80,30 @@ const Jobs: React.FC<ProjectProps> = ({
                         fullWidth
                     />
                     <TextField
-                        autoFocus
                         margin='dense'
                         id='discord_id'
                         label='디스코드 아이디'
+                        type='number'
+                        fullWidth
+                    />
+                    <TextField
+                        margin='dense'
+                        id='age'
+                        label='나이'
+                        type='number'
+                        fullWidth
+                    />
+                    <TextField
+                        margin='dense'
+                        id='self_intro'
+                        label='자기소개'
+                        type='text'
+                        fullWidth
+                    />
+                    <TextField
+                        margin='dense'
+                        id='determination'
+                        label='각오'
                         type='text'
                         fullWidth
                     />
@@ -92,7 +112,23 @@ const Jobs: React.FC<ProjectProps> = ({
                     <Button onClick={handleClose} variant='contained' color="secondary" className='font-black'>
                         Cancel
                     </Button>
-                    <Button onClick={handleClose} variant='contained' color="primary" className='font-black'>
+                    <Button onClick={() => {
+                        const discord = document.getElementById('discord').value;
+                        const id = document.getElementById('discord_id').value;
+                        const age = document.getElementById('age').value;
+                        const intro = document.getElementById('self_intro').value;
+                        const determination = document.getElementById('determination').value;
+                        fetch('/api/Webhook', {
+                            method: 'POST',
+                            body: new URLSearchParams({
+                                discord,
+                                id,
+                                age,
+                                intro,
+                                determination
+                            })
+                        })
+                    }} variant='contained' color="primary" className='font-black'>
                         Send!
                     </Button>
                 </DialogActions>
