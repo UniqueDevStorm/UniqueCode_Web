@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from "./Button";
+import { Button } from "@material-ui/core";
 import Dialog from '@material-ui/core/Dialog';
 import TextField from '@material-ui/core/TextField';
 import DialogActions from '@material-ui/core/DialogActions';
@@ -15,32 +15,28 @@ interface ProjectProps {
     status: boolean
 }
 
-const StatusTrue = ({ onClick }) => {
-    return (
-        <div>
-            <Button onClick={onClick}>
-                신청하기
-            </Button>
-        </div>
-    )
-}
-
-const StatusFalse = () => {
-    return (
-        <div className='select-none flex'>
-            <Button color={'#000'}>
-                ❌ 신청하기
-            </Button>
-        </div>
-    )
-}
-
 const Transition = React.forwardRef(function Transition(
     props: TransitionProps & { children?: React.ReactElement<any, any> },
     ref: React.Ref<unknown>,
 ) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
+
+const StatusTrue = ({ onClick }) => {
+    return (
+        <Button variant='outlined' color='primary' onClick={onClick} className='h-12 w-32'>
+            신청하기
+        </Button>
+    )
+}
+
+const StatusFalse = () => {
+    return (
+        <Button variant='outlined' disabled className='h-12 w-32'>
+            ❌ 신청하기
+        </Button>
+    )
+}
 
 const Jobs: React.FC<ProjectProps> = ({
     name,
@@ -57,7 +53,7 @@ const Jobs: React.FC<ProjectProps> = ({
         setOpen(false);
     };
     return (
-        <div className='p-10'>
+        <div className='p-10 flex flex-col gap-4'>
             <h1 className='font-thin text-3xl sm:text-6xl'>{name}</h1>
             <h2 className='font-thin text-2xl sm:text-4xl'>{description}</h2>
             {status ? <StatusTrue onClick={handleClickOpen} /> : <StatusFalse />}
@@ -78,17 +74,25 @@ const Jobs: React.FC<ProjectProps> = ({
                     <TextField
                         autoFocus
                         margin='dense'
-                        id='name'
-                        label='Email Address'
-                        type='email'
+                        id='discord'
+                        label='디스코드 닉네임 & 태그'
+                        type='text'
+                        fullWidth
+                    />
+                    <TextField
+                        autoFocus
+                        margin='dense'
+                        id='discord_id'
+                        label='디스코드 아이디'
+                        type='text'
                         fullWidth
                     />
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose} color="red" className='font-black'>
+                    <Button onClick={handleClose} variant='contained' color="secondary" className='font-black'>
                         Cancel
                     </Button>
-                    <Button onClick={handleClose} color="green" className='font-black'>
+                    <Button onClick={handleClose} variant='contained' color="primary" className='font-black'>
                         Send!
                     </Button>
                 </DialogActions>
