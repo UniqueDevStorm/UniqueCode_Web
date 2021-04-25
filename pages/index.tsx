@@ -13,32 +13,38 @@ const Projects = [
   {
     name: "StrawberryDonut",
     description: "나만의 스토리를 만들다.",
-    img: StrawberryDonut
+    img: StrawberryDonut,
+    url: 'https://sbdonut.dev/'
   },
   {
     name: "OliveToast",
     description: "서버를 관리해줍니다.",
-    img: OliveToast
+    img: OliveToast,
+    url: 'https://discord.com/oauth2/authorize?client_id=495209098929766400&permissions=8&scope=bot'
   },
   {
     name: 'MiniBOT',
     description: '커스텀 봇을 봇으로 제작하세요.',
-    img: MiniBOT
+    img: MiniBOT,
+    url: 'https://discord.com/oauth2/authorize?client_id=520830713696878592&permissions=8&scope=bot'
   },
   {
     name: 'FreeAI',
     description: '다기능 챗봇.',
-    img: FreeAI
+    img: FreeAI,
+    url: 'https://discord.com/oauth2/authorize?client_id=695899835953578025&permissions=2084433143&scope=bot'
   },
   {
     name: 'BananaMilk',
     description: '모두 함께 이야기를 재미있게.',
-    img: BananaMilk
+    img: BananaMilk,
+    url: 'https://discord.com/api/oauth2/authorize?client_id=805641034905944086&permissions=3525696&scope=bot'
   },
   {
     name: 'Uniquebots',
     description: '당신의 디스코드 봇을 홍보하세요.',
-    img: Uniquebots
+    img: Uniquebots,
+    url: 'https://uniquebots.kr/'
   }
 ]
 
@@ -68,6 +74,7 @@ export default function Home() {
                   img={x.img}
                   name={x.name}
                   description={x.description}
+                  url={x.url}
                   key={y}
               />
           ))}
