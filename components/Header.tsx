@@ -24,10 +24,10 @@ export default function Header() {
               className='opacity-100 w-20 h-20'
               alt='UniqueCode'
             />
-            <span className='font-thin sm:text-3xl'>UniqueCode</span>
+            <span className='font-bold sm:text-3xl'>UniqueCode</span>
           </a>
         </Link>
-        <div className='flex float-right font-thin p-8 px-5 text-sm gap-4 sm:gap-12 sm:text-3xl sm:px-20 sm:p-8'>
+        <div className='flex float-right font-bold p-8 px-5 text-sm gap-4 sm:gap-12 sm:text-3xl sm:px-20 sm:p-8'>
           <Link href='/projects'>
             <a href='/projects'>프로젝트</a>
           </Link>

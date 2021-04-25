@@ -1,11 +1,9 @@
-
-* {
-  font-family: 'SF Pro Display', sans-serif;
+@font-face {
+  font-family: "SF Pro";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 
-@font-face {
-  font-family: 'SF Pro Display';
-  font-style: normal;
-  font-weight: 100;
-  src: url('../fonts/SF-Pro.ttf') format('truetype');
+body {
+  font-family: "SF Pro", sans-serif;
 }
