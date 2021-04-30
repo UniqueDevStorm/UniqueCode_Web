@@ -6,7 +6,7 @@ import FreeAI from '@assets/img/projects/FreeAI.png'
 import BananaMilk from "@assets/img/projects/BananaMilk.png"
 import Uniquebots from "@assets/img/projects/Uniquebots.png"
 import CommingSoon from "@assets/img/projects/CommingSoon.png"
-import {NextSeo} from "next-seo";
+import { NextSeo } from "next-seo";
 
 export default function Project() {
   return (

@@ -16,57 +16,68 @@ const Member = [
     {
         name: "STORM",
         description: "대표 | 프론트엔드 & 백엔드 개발자",
-        img: STORM
+        img: STORM,
+        github: "UniqueDevStorm"
     },
     {
         name: "Happytree Samsung",
         description: "안녕하세요 삼성해피트리입니다!",
-        img: HappytreeSamsung
+        img: HappytreeSamsung,
+        github: "samsunghappytree123"
     },
     {
         name: "라피스",
         description: "Python!",
-        img: Lapis
+        img: Lapis,
+        github: "Lapis0875"
     },
     {
         name: "Minibox",
         description: "안녕하세요 미니박스예요",
-        img: Minibox
+        img: Minibox,
+        github: "minibox24"
     },
     {
         name: "SaidBySolo",
         description: "愛して 君を愛していたんだって君に伝えられなかったなあ",
-        img: SaidbySolo
+        img: SaidbySolo,
+        github: "SaidBySolo"
     },
     {
         name: "호두과자",
         description: "개발자 겸 영상편집자",
-        img: Hodugwaja
+        img: Hodugwaja,
+        github: "Hodugwaja"
     },
     {
         name: "choshinyoung",
         description: "대표 | 고야이",
-        img: choshinyoung
+        img: choshinyoung,
+        github: "choshinyoung"
     },
     {
         name: 'BGM',
         description: '몰라',
-        img: BGM
+        img: BGM,
+        github: "khk4912"
     },
     {
         name: 'sandsunset',
         description: '취미로 코딩',
-        img: sandsunset
+        img: sandsunset,
+        github: "sandsunset"
     },
     {
         name: "ReDesigned",
         description: "mailto:aria@アリア.みんな",
-        img: ReDesigned
+        img: ReDesigned,
+        github: "ReDesignedJP"
     },
     {
         name: "파랑이",
         description: "그냥 아주 평범한 사람",
-        img: pikokr
+        img: pikokr,
+        github: "pikokr"
     }
 ]
 
@@ -79,9 +90,10 @@ export default function Members() {
             />
             {Member.map((x, y) => (
                 <User
-                    Name={x.name}
-                    Description={x.description}
+                    name={x.name}
+                    description={x.description}
                     img={x.img}
+                    github={x.github}
                     key={y}
                 />
             ))}
