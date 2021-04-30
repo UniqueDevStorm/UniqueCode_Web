@@ -22,18 +22,20 @@ function Context(props: { style: {}, className: string }) {
 
 const Footer = () => {
   return (
-    <Container>
-      <Content
-        className='flex justify-center'
-        style={{
-          alignItems: 'center',
-        }}
-      >
-        <img src={logo} alt='Logo' className='w-16 h-16' />
-        <div className='text-3xl'>UniqueCode</div>
-      </Content>
-      <div>2021 &copy; UniqueCode all rights reserved.</div>
-    </Container>
+    <div>
+        <Container>
+            <Content
+                className='flex justify-center'
+                style={{
+                    alignItems: 'center',
+                }}
+            >
+                <img src={logo} alt='Logo' className='w-16 h-16' />
+                <div className='text-3xl'>UniqueCode</div>
+            </Content>
+            <div>2021 &copy; UniqueCode all rights reserved.</div>
+        </Container>
+    </div>
   )
 }
 

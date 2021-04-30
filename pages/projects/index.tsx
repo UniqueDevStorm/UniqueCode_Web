@@ -1,4 +1,4 @@
-import ProjectItem from '../../components/ProjectItem'
+import ProjectItem from '@components/ProjectItem'
 import StrawberryDonut from '@assets/img/projects/StrawberryDonut.png'
 import OliveToast from '@assets/img/projects/OliveToast.png'
 import MiniBOT from '@assets/img/projects/MiniBOT.png'
@@ -135,10 +135,10 @@ export default function Project() {
         <ProjectItem
           name='????'
           img={CommingSoon}
-          description='Comming Soon.'
+          description='Coming Soon.'
           links={[
               {
-                  text: 'Comming Soon!',
+                  text: 'Coming Soon!',
                   href: '',
                   color: '#7187D4'
               }

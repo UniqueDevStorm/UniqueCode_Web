@@ -1,4 +1,4 @@
-import Jobs from "../../components/Jobs";
+import Jobs from "@components/Jobs";
 import React from "react";
 import { NextSeo } from "next-seo";
 import data from '@assets/Recruitment.json';

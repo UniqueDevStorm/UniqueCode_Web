@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ProjectBox from '../components/ProjectsBox'
+import ProjectBox from '@components/ProjectsBox';
 import StrawberryDonut from '@assets/img/projects/StrawberryDonut.png'
 import ProjectBoxRoller from '../components/ProjectBoxRoller'
 import OliveToast from '@assets/img/projects/OliveToast.png'
