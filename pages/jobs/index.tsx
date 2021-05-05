@@ -14,7 +14,6 @@ export default function Recruitment() {
                 <Jobs
                     name={x.name}
                     description={x.description}
-                    status={x.status}
                     key={i}
                 />
             ))}
