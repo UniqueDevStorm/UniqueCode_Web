@@ -88,7 +88,7 @@ const Jobs: React.FC<ProjectProps> = ({
                     <TextField
                         margin='dense'
                         id='portfolio'
-                        label='포트폴리오'
+                        label='포트폴리오(URL)'
                         type='text'
                         fullWidth
                     />
@@ -107,17 +107,17 @@ const Jobs: React.FC<ProjectProps> = ({
                     <Button onClick={() => {
                         const id = document.getElementById('discord_id').value;
                         const age = document.getElementById('age').value;
-                        const intro = document.getElementById('portfolio').value;
+                        const portfolio = document.getElementById('portfolio').value;
                         const determination = document.getElementById('determination').value;
                         fetch('/api/Webhook', {
                             method: 'POST',
                             body: new URLSearchParams({
                                 id,
                                 age,
-                                intro,
+                                portfolio,
                                 determination
                             })
-                        }).then()
+                        })
                     }} variant='contained' color="primary" className='font-black'>
                         Send!
                     </Button>
