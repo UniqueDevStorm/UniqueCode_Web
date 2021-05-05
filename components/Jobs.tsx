@@ -27,16 +27,16 @@ class Jobs extends React.Component<{ name: string, description: string }, { id: 
         super(props);
         this.state = { id: '', age: '', portfolio: '', determination: '', open: false }
     }
-    idChange(e) {
+    idChange = e => {
         this.setState({ id: e.target.value })
     }
-    ageChange(e) {
+    ageChange = e => {
         this.setState({ age: e.target.value })
     }
-    portfolioChange(e) {
+    portfolioChange = e => {
         this.setState({ portfolio: e.target.value })
     }
-    determinationChange(e) {
+    determinationChange = e => {
         this.setState({ determination: e.target.value })
     }
     handleClickOpen = () => {
@@ -68,38 +68,31 @@ class Jobs extends React.Component<{ name: string, description: string }, { id: 
                             {this.props.description}
                         </DialogContentText>
                         <TextField
+                            autoFocus
                             margin='dense'
-                            id='discord_id'
                             label='디스코드 아이디'
-                            type='number'
-                            value={this.state.id}
+                            type='text'
                             fullWidth
                             onChange={this.idChange}
                         />
                         <TextField
                             margin='dense'
-                            id='age'
                             label='나이'
                             type='text'
-                            value={this.state.age}
                             fullWidth
                             onChange={this.ageChange}
                         />
                         <TextField
                             margin='dense'
-                            id='portfolio'
                             label='포트폴리오(URL)'
                             type='text'
-                            value={this.state.portfolio}
                             fullWidth
                             onChange={this.portfolioChange}
                         />
                         <TextField
                             margin='dense'
-                            id='determination'
                             label='각오'
                             type='text'
-                            value={this.state.determination}
                             fullWidth
                             onChange={this.determinationChange}
                         />
