@@ -51,6 +51,7 @@ const Projects = [
 export default function Home() {
   return (
     <div>
+      <meta name="naver-site-verification" content="1f859ccdf6c36ae473be981118542ba0021f8d96" />
       <NextSeo
         title='UniqueCode'
         description='UniqueCode WebSite.'
