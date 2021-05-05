@@ -22,10 +22,10 @@ const Transition = React.forwardRef(function Transition(
     return <Slide direction="up" ref={ref} {...props} />;
 });
 
-class Jobs extends React.Component<{ name: string, description: string }, { id: string, age: string, portfolio: string, determination: string, open: boolean, setOpen: boolean }> {
+class Jobs extends React.Component<{ name: string, description: string }, { id: string, age: string, portfolio: string, determination: string, open: boolean }> {
     constructor(props) {
         super(props);
-        this.state = { id: '', age: '', portfolio: '', determination: '', open: false, setOpen: false }
+        this.state = { id: '', age: '', portfolio: '', determination: '', open: false }
     }
     idChange(e) {
         this.setState({ id: e.target.value })
@@ -40,10 +40,10 @@ class Jobs extends React.Component<{ name: string, description: string }, { id: 
         this.setState({ determination: e.target.value })
     }
     handleClickOpen = () => {
-        this.setState({ setOpen: true })
+        this.setState({ open: true })
     };
     handleClose = () => {
-        this.setState({ setOpen: false })
+        this.setState({ open: false })
     };
     render() {
         return (
@@ -54,7 +54,7 @@ class Jobs extends React.Component<{ name: string, description: string }, { id: 
                     신청하기
                 </Button>
                 <Dialog
-                    open={this.state.setOpen}
+                    open={this.state.open}
                     TransitionComponent={Transition}
                     keepMounted
                     onClose={this.handleClose}
