@@ -72,14 +72,6 @@ const Jobs: React.FC<ProjectProps> = ({
                         {description}
                     </DialogContentText>
                     <TextField
-                        autoFocus
-                        margin='dense'
-                        id='discord'
-                        label='디스코드 닉네임 & 태그'
-                        type='text'
-                        fullWidth
-                    />
-                    <TextField
                         margin='dense'
                         id='discord_id'
                         label='디스코드 아이디'
@@ -90,20 +82,13 @@ const Jobs: React.FC<ProjectProps> = ({
                         margin='dense'
                         id='age'
                         label='나이'
-                        type='number'
-                        fullWidth
-                    />
-                    <TextField
-                        margin='dense'
-                        id='github'
-                        label='깃허브 아이디'
                         type='text'
                         fullWidth
                     />
                     <TextField
                         margin='dense'
-                        id='self_intro'
-                        label='자기소개'
+                        id='portfolio'
+                        label='포트폴리오'
                         type='text'
                         fullWidth
                     />
@@ -120,23 +105,19 @@ const Jobs: React.FC<ProjectProps> = ({
                         Cancel
                     </Button>
                     <Button onClick={() => {
-                        const discord = document.getElementById('discord').value;
                         const id = document.getElementById('discord_id').value;
                         const age = document.getElementById('age').value;
-                        const intro = document.getElementById('self_intro').value;
+                        const intro = document.getElementById('portfolio').value;
                         const determination = document.getElementById('determination').value;
-                        const github = document.getElementById('github').value;
                         fetch('/api/Webhook', {
                             method: 'POST',
                             body: new URLSearchParams({
-                                discord,
                                 id,
                                 age,
-                                github,
                                 intro,
                                 determination
                             })
-                        })
+                        }).then()
                     }} variant='contained' color="primary" className='font-black'>
                         Send!
                     </Button>

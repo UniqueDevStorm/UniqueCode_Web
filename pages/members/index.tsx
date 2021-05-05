@@ -11,6 +11,7 @@ import BGM from '@assets/img/Users/BGM.png';
 import sandsunset from '@assets/img/Users/sandsunset.png';
 import ReDesigned from '@assets/img/Users/ReDesigned.png';
 import pikokr from '@assets/img/Users/pikokr.png';
+import PatrickKR from '@assets/img/Users/PatrickKR.png';
 
 const Member = [
     {
@@ -78,6 +79,12 @@ const Member = [
         description: "그냥 아주 평범한 사람",
         img: pikokr,
         github: "pikokr"
+    },
+    {
+        name: 'PatrickKR',
+        description: '뉴비 패트릭이에요!',
+        img: PatrickKR,
+        github: 'patrick-mc'
     }
 ]
 
