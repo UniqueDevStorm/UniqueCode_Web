@@ -54,7 +54,7 @@ class Jobs extends React.Component<{ name: string, description: string }, { id: 
                     신청하기
                 </Button>
                 <Dialog
-                    open={this.state.open}
+                    open={this.state.setOpen}
                     TransitionComponent={Transition}
                     keepMounted
                     onClose={this.handleClose}
